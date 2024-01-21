@@ -1,0 +1,51 @@
+ -> What is node.js:
+ Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.
+
+Asynchronous and non blocking:
+
+var fs = require('fs');
+
+fs.readFile('input.txt', function (err, data) {
+   if (err) return console.error(err);
+   console.log(data.toString());
+});
+
+console.log('Program Ended');
+
+-> What is Express.js:
+Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. 
+
+
+1. Middleware: Express has robust support for middleware, allowing developers to add on various capabilities to their web application.
+2. Routing: Express provides a simple way to define routes, including dynamic routes with URL parameters.
+3. Simplified API: Express provides a simple API for creating various types of HTTP requests, setting headers, and handling cookies.
+4. Performance: Express is built on Node.js and shares its performance characteristics. It's lightweight and fast.
+
+-> What are REST APIs  
+
+REST stands for Representational State Transfer. It is an architectural style for designing networked applications. A REST API (also known as RESTful API) .
+
+REST APIs use HTTP methods to perform operations on data. The methods include:
+
+1. GET: Retrieve data from the server.
+2. POST: Send data to the server.
+3. PUT: Update existing data on the server.
+4. DELETE: Remove data from the server.
+
+REST APIs are stateless, meaning that each request from a client to a server must contain all the information needed to understand and process the request. The server should not store anything about the latest HTTP request the client made. Each request is treated as new.
+
+REST APIs use standard HTTP status codes to indicate the success or failure of a request. For example, status code 200 means 'OK', 404 means 'Not Found', and 500 means 'Internal Server Error'.
+
+
+
+-> Whaat is mongoose  
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation.
+
+Some of its features include:
+
+1. Schemas: Mongoose allows you to define schemas for your collections in MongoDB. A schema lets you define the fields stored in each document along with their validation requirements and default values.
+
+2. Relationships: Mongoose allows you to define relationships between different data models through the use of references.
+
+3. Validation: Mongoose provides built-in validation for schema definitions. This can greatly simplify the server code, and makes your data more predictable.
